@@ -1,7 +1,6 @@
-# qBittorrent-nox (Debian 8 64bits)
-For PulsedMedia Seedbox
-Bulit on Oct.14.2018, with Qt 5.5.1, libboost 1.55, libtorrent-rasterbar RC_1_0 (1.0.11)  
-
+# qBittorrent-nox (Debian 9 64bits)
+For FeralHosting Seedbox and UltraSeedBox  
+Bulit on Oct.14.2018, with Qt 5.7.1, libboost 1.62, libtorrent-rasterbar RC_1_0 (1.0.11)  
 
 ## Building Notes
 
@@ -10,11 +9,7 @@ Bulit on Oct.14.2018, with Qt 5.5.1, libboost 1.55, libtorrent-rasterbar RC_1_0 
 
 ```
 cd && mkdir -p /root/0.qb/{deb,lib,source} && \
-apt-get install -y build-essential pkg-config autoconf automake libtool git checkinstall libboost-dev libboost-system-dev libboost-chrono-dev libboost-random-dev libssl-dev geoip-database libgeoip-dev libboost-python-dev libgl1-mesa-dev && \
-wget -q https://github.com/Aniverse/BitTorrentClientCollection/raw/master/Other%20Tools/qt_5.5.1-1_amd64_debian8.deb && \
-dpkg -i qt_5.5.1-1_amd64_debian8.deb && rm -f qt_5.5.1-1_amd64_debian8.deb && \
-export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/local/Qt-5.5.1/lib/pkgconfig && \
-export PATH=/usr/local/Qt-5.5.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin && echo -e "\n   DONE   \n"
+apt-get install -y build-essential pkg-config autoconf automake libtool git checkinstall libboost-dev libboost-system-dev libboost-chrono-dev libboost-random-dev libssl-dev geoip-database libgeoip-dev libboost-python-dev libgl1-mesa-dev qtbase5-dev qttools5-dev-tools libqt5svg5-dev zlib1g-dev
 ```
 
 
